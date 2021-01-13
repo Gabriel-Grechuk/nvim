@@ -32,7 +32,7 @@ let g:lightline = {
 colorscheme dracula
 
 "Dicionário/Corretor para PT.
-set spell spelllang=pt
+set spell spelllang=pt,en
 
 " Configurações gerais de edição de texto. 
 set hidden
