@@ -15,17 +15,23 @@ call plug#begin('~/.vim/plugged')
     Plug 'voldikss/vim-floaterm'
     Plug 'metakirby5/codi.vim'
     Plug 'rust-lang/rust.vim'
+    Plug 'vim-crystal/vim-crystal'
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
 " Configurando lightline 
 let g:lightline = {
+  \     'colorscheme': 'wombat',
   \     'active': {
-  \         'left': [['mode', 'paste' ], ['readonly', 'filename', 'modified']],
+  \         'left': [['vimlogo','mode', 'paste'],  ['readonly', 'filename', 'modified']],
   \         'right': [['lineinfo'], ['percent'], ['fileformat', 'fileencoding']]
   \     },
-  \     
-  \     'colorscheme': 'wombat',
+  \
+  \     'component': {
+  \         'vimlogo': ''
+  \     },
+  \
   \ }
 
 " Esquemas de cores.
@@ -45,7 +51,7 @@ set tabstop=4
 set expandtab
 set tabstop=4
 set shiftwidth=4
-
+set encoding=UTF-8
 
 " Map de comandos.
 map <C-p> :NERDTreeToggle<CR>
