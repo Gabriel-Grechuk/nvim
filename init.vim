@@ -55,3 +55,4 @@ set encoding=UTF-8
 
 " Map de comandos.
 map <C-p> :NERDTreeToggle<CR>
+
