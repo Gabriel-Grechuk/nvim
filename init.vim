@@ -17,6 +17,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
     Plug 'vim-crystal/vim-crystal'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'terroo/vim-simple-emoji'
+    Plug 'ycm-core/YouCompleteMe'
+    Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -37,6 +40,11 @@ let g:lightline = {
 " Esquemas de cores.
 colorscheme dracula
 
+" YOUCOMPLETEME
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+set completeopt-=preview
+let g:ycm_show_diagnostics_ui = 0
+
 "Dicionário/Corretor para PT.
 set spell spelllang=pt,en
 
@@ -52,6 +60,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set encoding=UTF-8
+
+
 
 " Map de comandos.
 map <C-p> :NERDTreeToggle<CR>
