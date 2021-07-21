@@ -18,7 +18,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-crystal/vim-crystal'
     Plug 'ryanoasis/vim-devicons'
     Plug 'terroo/vim-simple-emoji'
-    Plug 'ycm-core/YouCompleteMe'
     Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
