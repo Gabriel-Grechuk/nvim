@@ -12,11 +12,3 @@ vim.cmd([[
 	syntax on
 ]])
 
--- Dracula theme.
-vim.o.termguicolors = true
--- vim.g.dracula_transparent_bg = true
-vim.cmd[[colorscheme dracula]]
-
--- Variavel utilizado no script do teroot
-vim.cmd([[ let extension = expand('%:e') ]])
-
