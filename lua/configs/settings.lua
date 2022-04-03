@@ -1,14 +1,17 @@
 vim.cmd([[
-	set hidden
-	set number
-	set relativenumber
-	set inccommand=split
-	set nowrap
-	set tabstop=2
-	set shiftwidth=2
-	set encoding=UTF-8
-	set cursorline
-	set incsearch
-	syntax on
+  syntax on
+  set encoding=UTF-8
+  set hidden
+  set inccommand=split
+  set nowrap
+  set incsearch
+
+  set number
+  set relativenumber
+  set cursorline
+
+  set tabstop=2
+  set expandtab
+  set shiftwidth=2
 ]])
 
