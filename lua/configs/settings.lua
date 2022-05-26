@@ -1,3 +1,4 @@
+-- Configurações gerais do nvim.
 vim.cmd([[
   syntax on
   set encoding=UTF-8
@@ -14,4 +15,7 @@ vim.cmd([[
   set expandtab
   set shiftwidth=2
 ]])
+
+-- Tema de cores
+vim.cmd[[colorscheme dracula]]  
 
