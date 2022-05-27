@@ -6,7 +6,10 @@ require ('plugins.plugins')
 
 -- Loading my config.
 require ('configs.settings')
-require ('configs.indent-blankline')
-require ('configs.colorizer')
-require ('configs.autopairs')
+
+-- Loading Plugins configs.
+require ('configs.plugins.indent-blankline')
+require ('configs.plugins.colorizer')
+require ('configs.plugins.autopairs')
+require ('configs.plugins.nvim-tree')
 
