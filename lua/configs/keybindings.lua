@@ -5,10 +5,10 @@ vim.cmd([[
 
 -- Floaterm.
 vim.cmd([[
-  tnoremap    <silent>    <leader><up>       <C-\><C-n>:FloatermNew<CR>
+  tnoremap    <silent>    <leader>f          <C-\><C-n>:FloatermNew<CR>
   tnoremap    <silent>    <leader><left>     <C-\><C-n>:FloatermPrev<CR>
   tnoremap    <silent>    <leader><right>    <C-\><C-n>:FloatermNext<CR>
-  nnoremap    <silent>    <leader>f          :FloatermToggle<CR>
+  nnoremap    <silent>    <leader><up>       :FloatermToggle<CR>
   tnoremap    <silent>    <leader><down>     <C-\><C-n>:FloatermToggle<CR>
 ]])
 
@@ -16,5 +16,4 @@ vim.cmd([[
 vim.cmd([[
   nnoremap    <silent>    <leader>n   :NvimTreeToggle<CR>
 ]])
-
 
