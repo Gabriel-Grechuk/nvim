@@ -76,3 +76,10 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+
+-- nvim-treesitter.
+require  ('nvim-treesitter.configs').setup {
+  ensure_installed = { "c", "cpp", "lua", "rust", "javascript" },
+  hightlight = { enable = true }
+}
+
