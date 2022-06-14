@@ -1,4 +1,4 @@
--- Autopairs config.
+  -- Autopairs config.
 require ('nvim-autopairs').setup({
   enable_check_bracket_line = false
 })
@@ -35,7 +35,7 @@ require ("indent_blankline").setup {
 }
 
 --  Nvim Tree.
-require ('nvim-tree').setup {}
+require ('nvim-tree').setup()
 
 -- Virt column.
 require ('virt-column').setup()
@@ -78,8 +78,19 @@ require('lualine').setup {
 }
 
 -- nvim-treesitter.
-require  ('nvim-treesitter.configs').setup {
+require('nvim-treesitter.configs').setup {
   ensure_installed = { "c", "cpp", "lua", "rust", "javascript" },
   hightlight = { enable = true }
 }
+
+require('nvim-lsp-installer').setup ({
+  automatic_installation = true,
+  ui = {
+    icons = {
+      server_installed = "✓",
+      server_pending = "➜",
+      server_uninstalled = "✗"
+    }
+  }
+})
 

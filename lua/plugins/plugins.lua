@@ -81,15 +81,17 @@ return require('packer').startup(function()
   -- LPS.
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
+
+  -- CMP.
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
-  use 'tami5/lspsaga.nvim'
-  use 'folke/lsp-colors.nvim'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'tami5/lspsaga.nvim'
+  use 'folke/lsp-colors.nvim'
   use 'nvim-lua/lsp-status.nvim'
 end)
 
