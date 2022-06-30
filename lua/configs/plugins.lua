@@ -83,6 +83,7 @@ require('nvim-treesitter.configs').setup {
   hightlight = { enable = true }
 }
 
+-- LSP Installler.
 require('nvim-lsp-installer').setup ({
   automatic_installation = true,
   ui = {
@@ -93,4 +94,6 @@ require('nvim-lsp-installer').setup ({
     }
   }
 })
+
+-- CMP.
 

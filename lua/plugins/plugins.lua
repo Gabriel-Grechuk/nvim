@@ -82,6 +82,9 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
+  -- Remote server.
+  use 'jbyuki/instant.nvim'
+
   -- CMP.
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
