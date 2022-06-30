@@ -1,5 +1,5 @@
 -- Packer bootstrap.
--- require ('plugins.packer')
+require ('plugins.packer')
 
 -- Loading plugins.
 require ('plugins.plugins')
@@ -8,8 +8,11 @@ require ('plugins.plugins')
 require ('configs.settings')
 
 -- Loading Plugins configs.
-require ('configs.plugins.indent-blankline')
-require ('configs.plugins.colorizer')
-require ('configs.plugins.autopairs')
-require ('configs.plugins.nvim-tree')
+require ('configs.plugins')
+
+--  Keybindings.
+require ('configs.keybindings')
+
+-- LSP.
+require ('configs.lsp.lspconfig')
 

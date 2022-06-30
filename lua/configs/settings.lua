@@ -10,11 +10,15 @@ vim.cmd([[
   set number
   set relativenumber
   set cursorline
+  set scrolloff=10
+  set colorcolumn=80
 
   set tabstop=2
   set expandtab
   set shiftwidth=2
 ]])
+
+vim.o.clipboard = 'unnamedplus'
 
 -- Tema de cores
 vim.cmd[[colorscheme dracula]]  
