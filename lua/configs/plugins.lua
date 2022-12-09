@@ -95,5 +95,6 @@ require('nvim-lsp-installer').setup ({
   }
 })
 
--- CMP.
-
+vim.cmd [[
+  let g:neoformat_try_node_exe = 1
+]]

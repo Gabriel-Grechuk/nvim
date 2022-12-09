@@ -61,6 +61,10 @@ local on_attach = function(client, bufnr)
     	end,
   	},
   	mapping = {
+      ['<C-n>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
+      ['<C-p>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+      ['<Down>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Select }),
+      ['<Up>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Select }),
     	['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-5), { 'i', 'c' }),
     	['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(3), { 'i', 'c' }),
     	['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
