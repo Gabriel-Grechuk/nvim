@@ -16,6 +16,7 @@ vim.cmd([[
   set tabstop=2
   set expandtab
   set shiftwidth=2
+  set so=9999
 ]])
 
 vim.o.clipboard = 'unnamedplus'
