@@ -16,11 +16,19 @@ vim.cmd([[
   set tabstop=2
   set expandtab
   set shiftwidth=2
-  set so=9999
 ]])
 
 vim.o.clipboard = 'unnamedplus'
 
 -- Tema de cores
-vim.cmd[[colorscheme dracula]]  
+vim.cmd.colorscheme "catppuccin"
 
+-- Neovide config
+if vim.g.neovide then
+  vim.o.guifont = "Hack:h12"
+  vim.g.neovide_scale_factor = 0.8
+
+  vim.g.neovide_remember_window_size = true
+
+vim.g.neovide_cursor_animation_length = 0.04
+end

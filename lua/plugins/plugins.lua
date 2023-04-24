@@ -7,7 +7,10 @@ return require('packer').startup(function()
   use 'lewis6991/impatient.nvim'
 
   -- Dracula theme.
-  use 'Mofiqul/dracula.nvim'
+  --  use 'Mofiqul/dracula.nvim'
+  
+  -- Catppuccin theme
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   -- Facilitaidentificar a identação do arquivo.
   use 'lukas-reineke/indent-blankline.nvim'
@@ -82,6 +85,9 @@ return require('packer').startup(function()
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
 
+  -- Rust tools
+  use 'simrat39/rust-tools.nvim'
+  
   -- Remote server.
   use 'jbyuki/instant.nvim'
 
