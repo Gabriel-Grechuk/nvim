@@ -57,9 +57,6 @@ vim.keymap.set('n', '<leader>gf', ':FloatermNew --height=0.7 --width=0.9 --winty
 
 -- Nice to haves
 ---- Strings
-vim.keymap.set('n', '<leader>sw', 'bve', {}) -- Select word
-vim.keymap.set('n', '<leader>ss', 'T\'vt\'', {}) -- Select string inside '
-vim.keymap.set('n', '<leader>ss\'', 'T\'vt\'', {}) -- Select string inside '
-vim.keymap.set('n', '<leader>ss\"', 'T\"vt\"', {}) -- Select string inside "
-vim.keymap.set('n', '<leader>sb', 'T vt ', {}) -- Select string inside "
+vim.keymap.set('n', '<leader>s', 'T\'vt\'', {}) -- Select string inside '
+vim.keymap.set('n', '<leader>w', 'T\"vt\"', {}) -- Select string inside '
 
