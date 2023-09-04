@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  catppuccin = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -99,15 +104,15 @@ _G.packer_plugins = {
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
+  },
   ["diffview.nvim"] = {
     loaded = true,
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
-  },
-  ["dracula.nvim"] = {
-    loaded = true,
-    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/dracula.nvim",
-    url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["emmet-vim"] = {
     loaded = true,
@@ -213,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
+  },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/home/gabriel/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
