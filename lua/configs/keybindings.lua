@@ -66,12 +66,8 @@ local keyset = vim.keymap.set
 vim.opt.updatetime = 300
 vim.opt.signcolumn = "yes"
 
----- Auto complete
-keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
-keyset("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
-keyset("i", "<cr>", [[coc#pum#visible() ? coc#pum#confirm() : "\<C-g>o\<CR>\<c-r>=coc#on_enter()\<CR>"]], opts)
-keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 
+---- Auto complete.
 ---- Go to next error.
 keyset("n", "g[", "<Plug>(coc-diagnostic-prev)", {silent = true})
 keyset("n", "g]", "<Plug>(coc-diagnostic-next)", {silent = true})

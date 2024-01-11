@@ -102,7 +102,5 @@ return require('packer').startup(function()
   use 'tami5/lspsaga.nvim'
   use 'folke/lsp-colors.nvim'
   use 'nvim-lua/lsp-status.nvim'
-
-  use {'neoclide/coc.nvim', branch = 'master', run = 'npm ci'}
 end)
 

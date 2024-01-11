@@ -16,3 +16,5 @@ require ('configs.keybindings')
 -- LSP.
 require ('configs.lsp.lspconfig')
 
+-- Toolscoc#pum#visible() ? coc#pum#confirm() : "\\
+require ('custom.tools')
