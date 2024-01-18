@@ -84,21 +84,21 @@ require('lualine').setup {
 
 -- nvim-treesitter.
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "rust", "javascript" },
+  ensure_installed = { "c", "cpp", "lua", "rust", "javascript", "typescript" },
   hightlight = { enable = true }
 }
 
 -- LSP Installler.
-require('nvim-lsp-installer').setup ({
-  automatic_installation = true,
-  ui = {
-    icons = {
-      server_installed = "✓",
-      server_pending = "➜",
-      server_uninstalled = "✗"
-    }
-  }
-})
+--require('nvim-lsp-installer').setup ({
+  --automatic_installation = true,
+  --ui = {
+    --icons = {
+      --server_installed = "✓",
+      --server_pending = "➜",
+      --server_uninstalled = "✗"
+    --}
+  --}
+--})
 
 local rt = require("rust-tools")
 
@@ -116,3 +116,5 @@ rt.setup({
 vim.cmd [[
   let g:neoformat_try_node_exe = 1
 ]]
+
+require("flutter-tools").setup {}

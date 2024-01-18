@@ -102,5 +102,14 @@ return require('packer').startup(function()
   use 'tami5/lspsaga.nvim'
   use 'folke/lsp-colors.nvim'
   use 'nvim-lua/lsp-status.nvim'
+
+ -- Flutter plugin
+  use {
+      'akinsho/flutter-tools.nvim',
+      requires = {
+          'nvim-lua/plenary.nvim',
+          'stevearc/dressing.nvim', -- optional for vim.ui.select
+      },
+  }
 end)
 
