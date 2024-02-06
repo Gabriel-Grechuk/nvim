@@ -18,3 +18,7 @@ require ('configs.lsp.lspconfig')
 
 -- Toolscoc#pum#visible() ? coc#pum#confirm() : "\\
 require ('custom.tools')
+
+-- Debuggin configs.
+require ('configs.debugger')
+

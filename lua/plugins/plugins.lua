@@ -103,6 +103,8 @@ return require('packer').startup(function()
   use 'folke/lsp-colors.nvim'
   use 'nvim-lua/lsp-status.nvim'
 
+  use 'mfussenegger/nvim-dap'
+
  -- Flutter plugin
   use {
       'akinsho/flutter-tools.nvim',
@@ -111,5 +113,8 @@ return require('packer').startup(function()
           'stevearc/dressing.nvim', -- optional for vim.ui.select
       },
   }
+
+ -- Nice glsl support.
+ use 'tikhomirov/vim-glsl'
 end)
 

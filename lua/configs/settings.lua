@@ -32,3 +32,8 @@ if vim.g.neovide then
 
 vim.g.neovide_cursor_animation_length = 0.04
 end
+
+-- GLSL highlight
+vim.cmd([[
+  autocmd! BufNewFile,BufRead *.vs,*.fs,*.frag,*.vert set ft=glsl
+]])
