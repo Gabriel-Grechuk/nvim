@@ -37,3 +37,6 @@ end
 vim.cmd([[
   autocmd! BufNewFile,BufRead *.vs,*.fs,*.frag,*.vert set ft=glsl
 ]])
+
+-- Blamer
+vim.g.blamer_enabled = true

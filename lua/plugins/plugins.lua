@@ -51,8 +51,8 @@ return require('packer').startup(function()
   -- Cursores multiplos.
   use 'mg979/vim-visual-multi'
 
-  -- 
-  -- use 'APZelos/blamer.nvim'
+  -- Blamer
+  use 'APZelos/blamer.nvim'
 
   -- Autoformat
   use 'sbdchd/neoformat'

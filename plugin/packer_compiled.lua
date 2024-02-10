@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["blamer.nvim"] = {
+    loaded = true,
+    path = "/home/gabe/.local/share/nvim/site/pack/packer/start/blamer.nvim",
+    url = "https://github.com/APZelos/blamer.nvim"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/gabe/.local/share/nvim/site/pack/packer/start/catppuccin",
