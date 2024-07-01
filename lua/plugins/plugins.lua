@@ -10,7 +10,7 @@ return require('packer').startup(function()
   --  use 'Mofiqul/dracula.nvim'
   
   -- Catppuccin theme
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use { "catppuccin/nvim", as = "catppuccin-frappe" }
 
   -- Facilitaidentificar a identação do arquivo.
   use 'lukas-reineke/indent-blankline.nvim'
@@ -33,10 +33,10 @@ return require('packer').startup(function()
   -- Explorador de arquivos.
   use {
     'kyazdani42/nvim-tree.lua',
+
     requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+      'kyazdani42/nvim-tree.lua', -- optional, for file icon
     },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
   -- Virtual line para delimitar códigos na linha 80.
@@ -116,5 +116,8 @@ return require('packer').startup(function()
 
  -- Nice glsl support.
  use 'tikhomirov/vim-glsl'
+
+ -- Firenvim Chrome extetion.
+ use 'glacambre/firenvim'
 end)
 

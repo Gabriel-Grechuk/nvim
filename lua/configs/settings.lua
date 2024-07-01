@@ -21,7 +21,7 @@ vim.cmd([[
 vim.o.clipboard = 'unnamedplus'
 
 -- Tema de cores
-vim.cmd.colorscheme "catppuccin"
+vim.cmd.colorscheme "catppuccin-frappe"
 
 -- Neovide config
 if vim.g.neovide then
