@@ -22,3 +22,5 @@ require ('custom.tools')
 -- Debuggin configs.
 require ('configs.debugger')
 
+
+print('Loaded config!')
