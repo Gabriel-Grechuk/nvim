@@ -5,16 +5,15 @@ vim.cmd([[
 
 local opts = { noremap=true, silent=true }
 
--- LSP
-vim.api.nvim_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-vim.api.nvim_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
-vim.api.nvim_set_keymap('i', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
-vim.api.nvim_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<space>D', '<cmd>lua vim.lsp.buf.type_definition()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<space>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
-vim.api.nvim_set_keymap('n', '<space>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
-vim.api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-vim.api.nvim_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
+vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
+vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+vim.keymap.set("n", "<space>D", vim.lsp.buf.type_definition, opts)
+vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
+vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, opts)
+vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+vim.keymap.set("n", "<space>", vim.lsp.buf.format, opts)
+
 
 -- Splited buffets
 vim.keymap.set("n", "<leader>bh", "<C-w><left>", opts)
@@ -27,18 +26,15 @@ vim.keymap.set("n", "<leader>d[", vim.diagnostic.goto_prev, opts)
 vim.keymap.set("n", "<leader>d]", vim.diagnostic.goto_next, opts)
 
 -- Floaterm.
-vim.cmd([[
-  tnoremap    <silent>    <leader>f          <C-\><C-n>:FloatermNew<CR>
-  tnoremap    <silent>    <leader>tl     <C-\><C-n>:FloatermPrev<CR>
-  tnoremap    <silent>    <leader>th    <C-\><C-n>:FloatermNext<CR>
-  nnoremap    <silent>    <leader>tk     :FloatermToggle<CR>
-  tnoremap    <silent>    <leader>tj     <C-\><C-n>:FloatermToggle<CR>
-]])
+vim.keymap.set("t", "<leader>f", "<C-\\><C-n>:FloatermNew<CR>", opts)
+vim.keymap.set("t", "<leader>tl", "<C-\\><C-n>:FloatermNext<CR>", opts)
+vim.keymap.set("t", "<leader>th", "<C-\\><C-n>:FloatermPrev<CR>", opts)
+vim.keymap.set("n", "<leader>tk", "<cmd>FloatermToggle<CR>", opts)
+vim.keymap.set("t", "<leader>tj", "<C-\\><C-n>:FloatermToggle<CR>", opts)
+
 
 -- Nvim Tree.
-vim.cmd([[
-  nnoremap    <silent>    <leader>n   :NvimTreeToggle<CR>
-]])
+vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeToggle<CR>", opts)
 
 -- Telescope config
 local builtin = require('telescope.builtin')
@@ -54,26 +50,3 @@ vim.keymap.set('n', '<C-i>', ':Neoformat<CR>')
 vim.keymap.set('n', '<leader>gg', ':FloatermNew --height=0.7 --width=0.9 --wintype=float --name=lazygit --autoclose=2 lazygit<CR>')
 vim.keymap.set('n', '<leader>gf', ':FloatermNew --height=0.7 --width=0.9 --wintype=float --name=ranger --autoclose=2 ranger<CR>')
 
-
--- Nice to haves
----- Strings
-vim.keymap.set('n', '<leader>s', 'T\'vt\'', {}) -- Select string inside '
-vim.keymap.set('n', '<leader>w', 'T\"vt\"', {}) -- Select string inside '
-
--- Coc config
-local keyset = vim.keymap.set
-
-vim.opt.updatetime = 300
-vim.opt.signcolumn = "yes"
-
-
----- Auto complete.
----- Go to next error.
-keyset("n", "g[", "<Plug>(coc-diagnostic-prev)", {silent = true})
-keyset("n", "g]", "<Plug>(coc-diagnostic-next)", {silent = true})
-
--- GoTo code navigation
-keyset("n", "gd", "<Plug>(coc-definition)", {silent = true})
-keyset("n", "gy", "<Plug>(coc-type-definition)", {silent = true})
-keyset("n", "gi", "<Plug>(coc-implementation)", {silent = true})
-keyset("n", "gr", "<Plug>(coc-references)", {silent = true})
