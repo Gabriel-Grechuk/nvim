@@ -84,7 +84,7 @@ require('lualine').setup {
 
 -- nvim-treesitter.
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { "c", "cpp", "lua", "rust", "javascript", "typescript" },
+  ensure_installed = { "c", "cpp", "lua", "rust", "javascript", "typescript", "svelte" },
   hightlight = { enable = true }
 }
 
