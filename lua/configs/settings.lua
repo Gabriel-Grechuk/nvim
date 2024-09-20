@@ -36,6 +36,7 @@ end
 -- GLSL highlight
 vim.cmd([[
   autocmd! BufNewFile,BufRead *.vs,*.fs,*.frag,*.vert set ft=glsl
+  autocmd! BufNewFile,BufRead *.ejs set ft=html
 ]])
 
 -- Blamer
