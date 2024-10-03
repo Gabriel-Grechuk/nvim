@@ -104,4 +104,5 @@ end
 -- Formatters:
 vim.cmd [[
   let g:neoformat_enabled_python = ["black"]
+  let g:neoformat_try_node_exe = 1
 ]]
