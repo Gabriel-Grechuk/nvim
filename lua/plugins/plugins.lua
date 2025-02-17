@@ -125,8 +125,9 @@ return require('packer').startup(function()
  use 'pangloss/vim-javascript'
  use 'evanleck/vim-svelte'
 
- 
  -- Arduino LSP.
  use 'glebzlat/arduino-nvim'
+
+ use 'cappyzawa/starlark.vim'
 end)
 
